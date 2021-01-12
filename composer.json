@@ -1,0 +1,42 @@
+{
+    "name": "juhniorsantos/queue-promises",
+    "description": "Promises for Laravel queue jobs is a fork on tochka-developers/queue-promises",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Babushkin Pavel",
+            "email": "darkdarin@tochka.com"
+        },
+        {
+            "name": "Junior Santos",
+            "email": "juhnior@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "laravel/framework": "^7.0|^8.0",
+        "nesbot/carbon": ">=2.0",
+        "bensampo/laravel-enum": "^2.1|^3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tochka\\Promises\\PromiseServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Tochka\\Promises\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tochka\\Promises\\Tests\\": "tests/"
+        }
+    }
+}
