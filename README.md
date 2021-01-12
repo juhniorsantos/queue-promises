@@ -1,3 +1,5 @@
+#FORKED FROM
+https://github.com/tochka-developers/queue-promises
 # Queue Promises
 The module allows chaining of Laravel jobs. The promise will be executed after all chained jobs are finished 
 (either completed successfully or failed). The promise has access to job results. 
